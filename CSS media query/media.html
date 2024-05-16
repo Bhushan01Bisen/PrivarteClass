@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+    <style>
+        body {
+            color: red;
+
+        }
+
+        @media all and (max-width:500px) {
+            body {
+                color: green;
+            }
+
+
+        }
+
+        @media (min-width:300px)and (max-width:500px) {
+            body {
+                color:blue;
+            }
+        }
+
+        @media print and(max-width:500px)
+        {
+            body{
+                color: purple;
+            }
+        }
+        
+        @media screen and (orientation:landscape)
+        {
+            body
+            {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Snigdha Dhaba from Jalgao</h1>
+    <p>F.C.Road</p>
+</body>
+
+</html>

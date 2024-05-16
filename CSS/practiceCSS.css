@@ -1,0 +1,13 @@
+h1 {
+    color: blueviolet;
+    font: size 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+p
+{   
+    color: brown;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: left;
+}

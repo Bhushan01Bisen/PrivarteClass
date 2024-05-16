@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // Get text and html
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                alert("Text:  " + $("#para").text());
+
+
+            });
+
+
+            $("#btn2").click(function () {
+                alert("HTML:  " + $("#para").html());
+
+
+            });
+
+        });
+
+        // Get value
+        $(document).ready(function () {
+            $("#btn3").click(function () {
+                alert("Value:  " + $("#ch1").val());
+
+
+            });
+        });
+
+        //get Attribute
+        $(document).ready(function () {
+            $("#btn4").click(function () {
+                alert($("#img1") .attr("src"));
+
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <p id="para"> Lorem ipsum dolor sit amet <b>consectetur adipisicing </b> elit. Quaerat, odio! Lorem ipsum dolor sit
+        amet
+        consectetur adipisicing elit. Corrupti aliquid debitis beatae <i>cumque saepe deleniti maxime</i> ab aspernatur
+        reprehenderit deserunt.</p>
+
+    <img src="/gift-wrappig.jpg" id="img1" alt=""><br>
+    <input type="checkbox" id="ch1" value="Accept Information">Accept<br><br>
+
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">set Value</button>
+    <button id="btn4">Set Attribute Value</button>
+
+
+</body>
+
+</html>

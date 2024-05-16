@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop</title>
+    <script>
+
+        //for in aloow us to loop through the properties of an object
+
+        let data={
+            name:"ABC",
+            age:10,
+            deg:'4th'
+        }
+        for(let d in data){
+            document.write(d,data[d] + "<br>")
+        }
+         //============================================
+         
+        let obj={
+            name:"xyz", //properties
+            marks:100,
+            age:20,
+            // function.getmorestudent()//method
+        }
+        for(let o in obj){
+          document.write(o+obj[o]+ "<br>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

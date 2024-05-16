@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <style>
+        input[type=search] {
+            height: 40px;
+            width: 40px;
+            border-radius: 50px;
+            border: none;
+            background-image: url('/kartzila/search.jfif');
+            background-repeat: no-repeat;
+            background-position: -0.3px;
+            /* background-size: cover;   */
+            transition: width 1s;
+        }
+
+        input[type=search]:focus {
+            width: 500px;
+            background-position: 450px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .img {
+            background-image: url(/kartzila/m.jpg);
+            height: 280px;
+            background-position: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/kartzila/car.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg> Pune
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">F.C.Road</a></li>
+                            <li><a class="dropdown-item" href="#">Hadapsar</a></li>
+                            <li><a class="dropdown-item" href="#">Pimpri</a></li>
+                            <li><a class="dropdown-item" href="#">Karve Nagar</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown d-flex">
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cuisine
+                        </a>
+
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <div class="d-flex bd-highlight mb-3 align-items-center">
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item" href="#"><img class="dropimages"
+                                                src="kartzila/burger.svg"><br>
+                                            <p>Burgers & Fries</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila/noodles.svg"><br>
+                                            <p>Noodles</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila//pizza.svg"><br>
+                                            <p>Pizza & Pasta</p>
+                                        </a></li>
+                                </div>
+                            </div>
+                            <div class="d-flex bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="/kartzila/steak.svg"><br>
+                                            <p>Grill & Steaks</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="/kartzila/fish.svg"><br>
+                                            <p>Fish & Seafood</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila/healthy.svg"><br>
+                                            <p>Healthy Food</p>
+                                        </a></li>
+                                </div>
+                            </div>
+                            <div class="d-flex bd-highlight mb-3">
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila/cuisine.svg"><br>
+                                            <p>Haute Cuisine</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila/coffee.svg"><br>
+                                            <p>Chicken & Snacks</p>
+                                        </a></li>
+                                </div>
+                                <div class="p-2 bd-highlight">
+                                    <li><a class="dropdown-item " href="#"><img class="dropimages"
+                                                src="kartzila/chicken.svg"><br>
+                                            <p>Coffee & Deserts</p>
+                                        </a></li>
+                                </div>
+                            </div>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item  d-flex">
+                        <a class="nav-link" href="/kartzila/kart.html">
+                            Back to main demo
+                        </a>
+
+                    </li>
+
+
+
+                </ul>
+                <ul class="d-flex navbar-nav">
+                    <li class="nav-item">
+                        <a class="navlink" href="#">
+                            <input type="search" placeholder="        What do you need ?">
+
+                        </a>
+                    </li>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li class="nav-item">
+                        <a class="navlink" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid img d-flex align-content-center">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">All Catagery</li>
+                <li class="breadcrumb-item active" aria-current="page">Burger</li>
+            </ol>
+            <h1 class="text-light text centertext-lg-start pt-3">Burger & Fries</h1>
+        </nav>
+    </div>
+
+
+    <div class="container" style="padding: 10px ;">   
+        <nav class="nav  navbar-expand-lg">
+          <a class="nav2" href="#"> <figure><img src="/kartzila/burger.svg" alt="">Burgers & Fries<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila/noodles.svg" alt="">Noodles<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila//pizza.svg" alt="">Pizza& burgar<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila/steak.svg" alt="">Grill & Steaks<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila/fish.svg" alt="">Fish & Seafood<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila//healthy.svg" alt="">Healthy Food<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila//cuisine.svg" alt="">Haute Cuisine<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila//chicken.svg" alt="">Chicken & Snacks<figcaption></figcaption></figure> </a>
+          <a class="nav2" href="#"> <figure><img src="/kartzila//coffee.svg" alt="">Coffee & Deserts<figcaption></figcaption></figure> </a>
+        </nav>
+        </div>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="d-flex flex-row bd-highlight mb-3 bg-dark justify-content-evenly">
+            <div class="p-2 bd-highlight">
+                <h2 class="text-white">Cartzilla <sup>Tm</sup></h2>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="/kartzila/fr.png" alt=""> Eng/$
+
+                    </button><br>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected> $ USD</option>
+                                    <option value="1">€ EUR</option>
+                                    <option value="1">£ UKP</option>
+                                    <option value="2">Ұ JPY</option>
+                                </select></a></li>
+                        <li><a class="dropdown-item" href="#"><img src="/kartzila/it.png" alt=""> francias</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="/kartzila/en.png" alt=""> Deutusch</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="/kartzila/it.png" alt=""> italiano</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="p-2 bd-highlight fs-6">
+                <h2 class="text-white ">Join us</h2>
+                <a href="#" class="text-secondary ">Careers</a><br>
+                <a href="#" class="text-secondary">Restaurants</a><br>
+                <a href="#" class="text-secondary">Become a Courier</a><br>
+                <a href="#" class="text-secondary">About</a><br>
+            </div>
+            <div class="p-2 bd-highlight">
+                <h2 class="text-white">Let us</h2>
+                <a href="#" class="text-secondary ">Careers</a><br>
+                <a href="#" class="text-secondary">Restaurants</a><br>
+                <a href="#" class="text-secondary">Become a Courier</a><br>
+                <a href="#" class="text-secondary">About</a><br>
+                <br><br>
+
+            </div>
+            <div class="p-2 bd-highlight">
+                <h2 class="text-white">Follow us </h2>
+                <a href="#" class="text-secondary ">Careers</a><br>
+                <a href="#" class="text-secondary">Restaurants</a><br>
+                <a href="#" class="text-secondary">Become a Courier</a><br>
+                <a href="#" class="text-secondary">About</a><br>
+            </div>
+            <div class="p-2 bd-highlight">
+                <h2 class="text-white">Download our app</h2>
+                <div class="ai d-flex">
+                    <a href="#" class="text-secondary "><img src="/kartzila/app.png" alt=""></a><br>
+                    <a href="#" class="text-secondary "><img src="/kartzila/gstore.png" alt=""></a><br>
+                </div>
+
+
+
+            </div>
+
+    </footer>
+</body>
+
+</html>

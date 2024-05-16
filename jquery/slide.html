@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+
+        // Slide-down method
+
+        $(document).ready(function () {
+            $("#menu").click(function () {
+                $("#drop").slideDown("slow");
+                
+            });
+            
+        });
+
+        // slide-up method
+        
+        $(document).ready(function () {
+            $("#menu").click(function () {
+                $("#drop").up("slow");
+                
+            });
+            
+        });
+
+
+        // Slide-toogle method
+        
+        $(document).ready(function () {
+            $("#menu").click(function () {
+                $("#drop").slideToggle("slow");
+                
+            });
+            
+        });
+
+    </script>
+    <style>
+        #drop, #menu
+        {
+            background-color: pink;
+            border: solid 1px purple;
+            text-align: center;
+            color: green;
+        }
+
+
+        #drop
+        {
+            padding: 50px;
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+<div id="menu">Sevenmenter Pvt. Ltd</div>
+<div id="drop">Welcome to Sevenmenter Pvt. Ltd. <br>
+    It is Lerning center which provids diffrent courses.
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+     
+        $(document).ready(function () {
+            $("#menu").click(function () {
+              $("#drop").slideDown(5000);
+            });
+            $("#stop").click(function () {
+              $("#drop").stop();
+            });
+
+
+        });
+</script>
+
+<style>
+
+#drop, #menu{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    color: purple;
+    border: solid 1px green;
+    border-radius: 3px;
+}
+
+#drop{
+    padding: 50px;
+    display: none;
+}
+</style>
+
+</head>
+<body>
+    <button id="stop">Stop Sliding</button>
+    <div id="menu">Sevenmentor Pvt. Ltd.</div>
+
+    <div id="drop">Welcome to Sevenmentor  Pvt. Ltd.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, molestias.
+</div>
+</body>
+</html>

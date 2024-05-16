@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('#s1').on("keyup",
+                function () {
+                    var value = $(this).val().toLowerCase();
+                    $('#tab tr').filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+                    });
+
+                });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+<input id="s1" type="search"
+placeholder="serch..">
+
+<br><br>
+<table>
+    <thead>
+        <tr><th>Roll No. </th><th>Name</th><th>Total</th><th>Average</th></tr>
+    </thead>
+   
+    <tbody id="tab">
+        <tr>
+            <td>1</td>
+            <td>ABC</td>
+            <td>200</td>
+            <td>60</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>PQR</td>
+            <td>300</td>
+            <td>70</td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>XYZ</td>
+            <td>400</td>
+            <td>80</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+</body>
+
+</html>

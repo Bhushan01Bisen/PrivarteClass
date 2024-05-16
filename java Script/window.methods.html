@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button onclick="wop()">Open Window</button>
+    <button onclick="wcl()">Close Window</button>
+    <button onclick="moveWin()">Move Window</button>
+    <button onclick="rewin()">Resize Window</button>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+        //window.open method
+        let mwin;
+
+        function wop() {
+            // window.open("https://ww.google.com");
+            // window.open("animation.html");
+            mwin = window.open("", "", "width=200,height=100");
+        }
+
+        //window.close method
+        function wcl() {
+            window.close();
+        }
+        //window.moveto method
+
+        function moveWin() {
+            mwin.resizeTo(500, 100);
+
+
+            //window.resize to method
+
+        }
+
+        function rewin() {
+            mwin.resizeTo(500, 100);
+
+        }
+
+        //setintervel method
+
+        setInterval(msg, 3000);
+
+        function msg() {
+            document.getElementById("p1").innerHTML += "Hello!!!";
+
+        }
+
+        // window properties
+
+        window.name = "adssa";
+        let name = window.name;
+        let loc = window.location;
+        let stat = window.status;
+
+        // document.getElementById("p2").innerHTML="window name is " +name;
+        // document.getElementById("p2").innerHTML="window location is " +loc;
+
+        document.getElementById("p2").innerHTML = "window status is" + stat;
+    </script>
+
+</body>
+
+</html>

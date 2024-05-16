@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container
+{
+    background-image: url(/img/main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.il
+{
+    display: flex;
+    /* border: solid red; */
+}
+.logo {
+    /* display: inline-block;
+    background-color: aqua; */
+    /* height: 200px;
+    width: 200px; */
+    transition: transform 2s;
+}
+
+.logo:hover {
+    transform: translate(50px, 50px);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    
+</head>
+<body>
+    <ul id="list">
+    <li>white</li>
+    <li>Red</li>
+    <li>Yellow</li>
+    <li>black</li>
+</ul>
+
+<script>
+    // Replace child
+    var newElement=document.createElement("li")
+    var newtext=document.createTextNode("Replace Child");
+    newElement.appendChild(newtext);
+    console.log(newElement)
+
+
+    var target=document.getElementById("list");
+    var oldElement=target.children[3]
+    console.log(oldElement)
+
+    target.replaceChild(newElement,oldElement);
+
+
+    // remove Element
+    var remove=target.children[2]
+
+    target.removeChild(remove)
+</script>
+    
+
+</body>
+</html>

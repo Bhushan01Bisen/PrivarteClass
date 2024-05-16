@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <style>
+        .d-img {
+            width: 100px;
+        }
+
+        input[type=search] {
+            height: 30px;
+            width: 30px;
+            border-radius: 50px;
+            background-image: url('/kartzila/img/search.jfif');
+            background-repeat: no-repeat;
+            background-position: -0.5px;
+            /* background-size: cover; */
+            transition: width 1s;
+            /* float: left; */
+            border: none;
+        }
+
+        input[type=search]:focus {
+            width: 100%;
+            background-position: 450px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/kartzila/logo-dark.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Pune
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Shivaji Nagar</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Cuisine
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="d-flex flex-row mb-3">
+
+                                <div class="p-2">
+
+                                    <a href="">
+
+                                        <img class="d-img" src="/kartzila/burger.svg" alt="">
+
+                                        <br>
+
+                                        <p>Burger & Fries</p>
+
+                                    </a>
+                                </div>
+
+                                <div class="p-2">
+
+                                    <a href="">
+
+                                        <img class="d-img" src="/kartzila/noodles.png" alt="">
+
+                                        <br>
+
+                                        <p>Noodles</p>
+
+                                    </a>
+
+                                    <div class="p-2">
+
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/pizza.svg" alt="">
+
+                                            <br>
+
+                                            <p>Pizza & Frires</p>
+
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row mb-3">
+
+                                    <div class="p-2">
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/steak.svg" alt="">
+
+                                            <br>
+
+                                            <p>Grill & Streaks</p>
+
+                                        </a>
+
+                                    </div>
+                                    <div class="p-2">
+
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/fish.svg" alt="">
+
+                                            <br>
+
+                                            <p>Fish & SeaFood</p>
+
+                                        </a>
+
+                                    </div>
+                                    <div class="p-2">
+
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/healthy.svg" alt="">
+
+                                            <br>
+
+                                            <p>Healthy Food</p>
+
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row mb-3">
+
+                                    <div class="p-2">
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/cuisine.svg" alt="">
+
+                                            <br>
+
+                                            <p>Haute Curesine</p>
+
+                                        </a>
+
+                                    </div>
+                                    <div class="p-2">
+
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/coffee.svg" alt="">
+
+                                            <br>
+
+                                            <p>Coffee & Deserts</p>
+
+                                        </a>
+
+                                    </div>
+                                    <div class="p-2">
+
+                                        <a href="">
+
+                                            <img class="d-img" src="/kartzila/chicken.svg" alt="">
+
+                                            <br>
+
+                                            <p>Chicken & Snake</p>
+
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <!-- <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="d-flex navbar-nav">
+                    <li class="nav-link">
+                        <a class=nav-link href="#">
+
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                              </svg> -->
+                            <input type="search" placeholder="What DO You Need">
+
+                        </a>
+
+
+
+
+                    </li>
+
+                    <li class="nav-link">
+                        <a class=nav-link href="#">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                            </svg>
+                        </a>
+
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+</body>
+
+</html>

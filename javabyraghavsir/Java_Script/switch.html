@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=4;
+        switch (a){
+            case 1:
+                document.write("I am case 1");
+            break;
+            case 2:
+                document.write("I am case 2");
+            break;
+            case 3:
+                document.write("I am case 3");
+            break;
+            case 4:
+                document.write("I am case 4");
+            break;
+            case 5:
+                document.write("I am case 5");
+            break;
+            default:
+                document.write("I am in default condition...");
+           
+        }
+
+        switch(new Date().getDay()){
+            case 0 :
+                day="Sunday";
+                break;
+            case 1 :
+                day="Monday";
+                break;
+            case 2 :
+                day="Tuesday";
+                break;
+            case 3 :
+                day="Wednesday";
+                break;
+            case 4 :
+                day="Thursday";
+                break;
+            case 5 :
+                day="Friday";
+                break;
+            case 6 :
+                day="Saturday";
+                break;
+             }
+            //  document.getElementById("demo").innerHTML="Today is a : " + day;
+            document.write(`<h2>Today is ${day}`)
+    </script>
+</head>
+<body>
+    <h2 id="demo"></h2>
+</body>
+</html>

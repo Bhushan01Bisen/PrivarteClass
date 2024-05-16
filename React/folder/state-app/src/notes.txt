@@ -1,0 +1,76 @@
+
+
+
+
+
+**Components ****
+  there are 2 type of Components 
+     1. Class Componenets
+     2. Functional Componenets
+
+     1 fuctional components
+     -They are stateless componenets by defalts 
+   *  You can you react hooks to add states though
+   *  More about this in React hooks section
+
+   - it recive props as arguments
+   - the is no react lifecycle methods available
+   - React hook like useEffect should gibe youn most of what you'd need 
+
+   --Use it whenever you don't care aboutthe states
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+**Class Componenets
+-This is considered as the "old way" of defining componenets in react
+-Definen componenets using Classes
+-They are stateful
+--
+
+
+
+
+
+
+
+
+//Class Componenets
+
+Class ClassComponenet extends React.Componenets{
+    constructor(){
+        super();
+        this.state = {age:26};
+    }
+    render(){
+        return <h2>I am Class Components!</h2>;
+    }
+}
+

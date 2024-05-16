@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Atrribute Get Atrribute</title>
+</head>
+<body>
+    <!-- name=value -->
+    <p id="para" class="myclass" style="font-size: 28px;background-color: yellow;">Hello Everyone</p>
+
+    <script>
+
+var p=document.getElementById("para");
+p.setAttribute('class','myclasstwo');
+// p.setAttribute('id','paral');
+p.setAttribute('title','demo');
+console.log(p)
+
+var get=p.getAttribute('id')
+console.log(get);
+
+// p.setAttribute('title','mytitle');
+// console.log(p);
+
+p.setAttribute('style','font-style:italic;background-color:red;font-size:30px')
+
+
+    </script>
+</body>
+</html>

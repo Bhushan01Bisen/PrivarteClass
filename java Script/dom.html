@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="head"></h2>
+    <p>Sevenmentor Pvt. Ltd.</p>
+    <p class="b">Shrinath Plaza, F.C. Road, Pune</p>
+    <p class="b">Dyaneshwar Paduka Chowk</p>
+    <p id="para"></p>
+    <h4 id="h"></h4>
+
+    <script lang="javasript">
+        //Finding element by getelementById method
+
+
+        document.getElementById("head").innerHTML = "welcome to Javascript";
+
+        //Finding element by getelementByTagName method
+
+
+        const x = document.getElementsByClassName("b");
+        document.getElementById("para").innerHTML =
+            'The first paragraph with class ="b" is :' + x[0].innerHTML;
+
+        //Finding HTML Element by CSS Selectors
+        const y = document.querySelectorAll(".b");
+        document.getElementById("para").innerHTML =
+            'All Paragraphs with class="b" are: ' + y[0].innerHTML + y[1].innerHTML;
+    </script>
+</body>
+
+</html>

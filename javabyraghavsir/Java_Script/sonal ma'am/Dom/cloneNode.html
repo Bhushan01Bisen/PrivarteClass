@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="list1">
+        <li>Red</li>
+        <li>Yellow</li>
+        <li>Blue</li>
+        <li>Green</li>
+
+    </ul >
+    <ul id="list">
+        <li>Apple</li>
+        <li>Mango</li>
+
+    </ul>
+
+   
+   
+   
+    <script>
+        // In clone method we get two values true or false, Default value is false
+        // If the value the is false it only print a tag
+        // If the value is true then it copy the element and its value false
+        // cloneNode copy the target value
+
+
+        var target=document.getElementById("list1").children[0]
+        var clone=target.cloneNode()
+        console.log(clone);
+
+
+        document.getElementById("list").appendChild(clone)
+    </script>
+</body>
+</html>

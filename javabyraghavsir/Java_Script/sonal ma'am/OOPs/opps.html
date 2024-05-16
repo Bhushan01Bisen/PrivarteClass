@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <!-- oops -->
+
+    <script>
+        // var a={properites, name:name method()}
+        class car{
+            constructor(name,brand,engine){
+
+                this.name=name;
+                this.brand=brand;
+                this.engine=engine
+
+            }
+            getdetails(){
+                document.write(`Car name is ${this.name} and the brand is ${this.brand}   `)
+            }
+         
+            
+        }
+        let car1=new car('fiat','Tata','1234cc')
+        let car2=new car('swift','Suzuki','23oocc')
+
+        car1.getdetails();
+        car2.getdetails();
+    </script>
+
+
+     
+</body>
+</html>

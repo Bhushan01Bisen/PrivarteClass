@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promis all</title>
+</head>
+<body>
+    
+
+    <script>
+        let  p1=new Promise(function (resovle,reject) {
+            setTimeout(()=>{
+                document.write("The first promise is resovled"+"<br>")
+                resovle(10);
+            
+
+            },1000)
+            
+        })
+        let  p2=new Promise(function (resovle,reject) {
+            setTimeout(()=>{
+                document.write("The third promise is resovled"+"<br>")
+                resovle(20);
+            
+
+            },2000)
+            
+        })
+        let  p3=new Promise(function (resovle,reject) {
+            setTimeout(()=>{
+                document.write("The forth promise is resovled"+"<br>")
+                resovle(30);
+            
+
+            },3000)
+            
+        })
+        Promise.all([p1,p2,p3]).then((result)=>{
+            document.write(`Results:${result}`)
+        })
+    </script>
+
+</body>
+</html>

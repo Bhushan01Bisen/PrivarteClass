@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+
+    <script>
+
+function message(msg) {
+    document.getElementById("p1").innerHTML = msg;
+    
+    
+}
+function message1() {
+   message("Hello");
+
+    
+}
+function message2() {
+   message("Goodbye");
+
+    
+}
+//message1();
+//message2();
+message2();
+message1();
+//to control sequence
+
+function display(result) {
+    document.getElementById("p2").innerHTML= result;
+    
+}
+function calci(num1,num2,tot) {
+    let sum= num1 + num2;
+    tot(sum);
+
+    
+}
+calci(25,25,display);
+
+
+
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* div p 
+{
+background-color: aqua;
+color: red;
+} */
+/* div>p
+{   
+    background-color: blueviolet;
+    color: black;
+} */
+/* div+p
+{
+    background-color: brown;
+    color: chartreuse;
+} */
+div~p{
+    background-color: chocolate;
+    color:darkblue;
+}
+a:link
+{
+color: aqua;
+
+
+}
+a:visited
+{
+    color: brown;
+
+}
+a:hover
+{
+    color:black;
+    font-size: 20px;    
+}
+  p i:first-child
+{
+    color: red;
+    font-size: 20px;
+}
+
+p::first-letter
+{
+ color: red;
+ font-size: 40px;
+}
+p::first-line
+{
+    color: darkmagenta;
+
+}
+h1::before
+{
+content: url(sh.jpg);
+
+}
+h1::after
+{   
+content: url(sh.jpg);
+}
+::selection
+{
+    background-color: aqua;
+    color: red;
+}

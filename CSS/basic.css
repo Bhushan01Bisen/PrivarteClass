@@ -1,0 +1,44 @@
+.abc 
+
+{
+    color:rgb(67, 17, 17);
+    font-size: 50px;
+    font-family: "chiller";
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    
+}
+.para
+{
+    color:brown;
+    font-size: 30px;
+    font-family: "chiller";
+    text-align: justify;
+    text-decoration:none;
+    text-transform: capitalize;
+    text-shadow: 2px 3px 4px brown;
+    margin: 0 auto;
+}
+
+.box
+{
+align-items: center;
+ height: 300px;
+ width: 900px;
+ background-color: darkolivegreen;
+ border: 2px double rebeccapurple;
+ outline: 5px dashed brown;
+ padding: 3px;
+ outline-offset: 10px;
+
+}
+.box:hover
+{
+    box-shadow: 1px 2px 100px gold;
+}
+
+.icon {
+    border: 2px solid red;
+    height: 300px;
+}

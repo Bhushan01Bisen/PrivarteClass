@@ -1,0 +1,37 @@
+ul.a
+{
+    list-style-type: upper-roman;
+}
+ul.b
+{
+    list-style-type: upper-alpha;
+}
+ol.c
+{
+    list-style-type: decimal;
+}
+ol.d
+{
+    list-style-type: square;
+}
+::marker
+{
+    color: brown;
+    font-size: 30px;
+}
+li{
+
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+
+}
+.e
+{
+    list-style-image: url("logo.png");
+    
+}
+.f
+{
+    list-style-image: url();
+}

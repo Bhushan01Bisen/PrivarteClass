@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #a {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background-color: black;
+        }
+
+        #b {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+
+            position: absolute;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <button onclick="move()"> Click me</button>
+    <div id="a">
+        <div id="b"></div>
+    </div>
+
+
+    <script lang="Javascript">
+        function move() {
+            let id = null;
+            const e = document.getElementById("b");
+            let left = 0;
+            let top = 0;
+            clearInterval(id);
+            id = setInterval(end, 5);
+            function end() {
+                if (left == 350) {
+                    clearInterval(id);
+                    id = setInterval(end1, 5)
+
+                } else {
+                    left++;
+                    e.style.left = left + "px";
+
+
+                }
+            }
+
+            function end1() {
+                if (top == 350) {
+                    clearInterval(id);
+                    id = setInterval(end2, 5)
+
+                } else {
+                    top++;
+                    e.style.top = top + "px";
+
+
+                }
+            }
+
+            function end2() {
+                if (left == 0) {
+                    clearInterval(id);
+                    id = setInterval(end3, 5);
+                } else {
+                    left--;
+                    e.style.left = left + "px";
+                }
+
+            }
+
+            function end3() {
+                if (top == 0) {
+                    clearInterval(id);
+                    //for looping
+                    id= setInterval(end,5)
+                  
+                    
+                } else {
+                    top--;
+                    e.style.top = top + "px";
+                }
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

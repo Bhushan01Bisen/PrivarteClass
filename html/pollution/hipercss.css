@@ -1,0 +1,13 @@
+.abc:hover
+{
+    box-shadow: 8px 8px 8px blue;
+}
+
+a:visited {
+    background-color: #f44336;
+    color:red;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to cart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        div {
+            display: flex;
+
+        }
+
+        button {
+            border: none;
+            background: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+
+    </div>
+<!-- ======================================================== -->
+
+    <script>
+        const productDetails=[
+            {
+            name:"Airpods Pro",
+            price:2000,
+            imageurl:"https://www.reliancedigital.in/medias/Apple-Airpods-Pro-493177748-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDgyM3xpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGYzLzk4OTA3NTE0Nzk4MzguanBnfDYyNDBlYzc0MmNlOWNkZjUxOTZmOWI0M2M3MmY5ZWIxYTQxMjUwNTMxZDZhODczMTk1NDgwMjczNmZkNTA2OGY",
+            qty:10,
+            heading:"Wireless Noise Cancelling Earpones",
+            des:"Airpods proa have been designed to deliver active noise cancellation.]"   
+            },
+            {
+            name:"Airpods Pro",
+            price:3000,
+            imageurl:"https://www.reliancedigital.in/medias/Apple-Airpods-Pro-493177748-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDgyM3xpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGYzLzk4OTA3NTE0Nzk4MzguanBnfDYyNDBlYzc0MmNlOWNkZjUxOTZmOWI0M2M3MmY5ZWIxYTQxMjUwNTMxZDZhODczMTk1NDgwMjczNmZkNTA2OGY",
+            qty:10,
+            heading:"Wireless Noise Cancelling Earpones",
+            des:"Airpods proa have been designed to deliver active noise cancellation.]"   
+            },
+            {
+            name:"Airpods Pro",
+            price:4000,
+            imageurl:"https://www.reliancedigital.in/medias/Apple-Airpods-Pro-493177748-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDgyM3xpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGYzLzk4OTA3NTE0Nzk4MzguanBnfDYyNDBlYzc0MmNlOWNkZjUxOTZmOWI0M2M3MmY5ZWIxYTQxMjUwNTMxZDZhODczMTk1NDgwMjczNmZkNTA2OGY",
+            qty:10,
+            heading:"Wireless Noise Cancelling Earpones",
+            des:"Airpods proa have been designed to deliver active noise cancellation.]"   
+            },
+            {
+            name:"Airpods Pro",
+            price:5000,
+            imageurl:"https://www.reliancedigital.in/medias/Apple-Airpods-Pro-493177748-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDgyM3xpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGYzLzk4OTA3NTE0Nzk4MzguanBnfDYyNDBlYzc0MmNlOWNkZjUxOTZmOWI0M2M3MmY5ZWIxYTQxMjUwNTMxZDZhODczMTk1NDgwMjczNmZkNTA2OGY",
+            qty:10,
+            heading:"Wireless Noise Cancelling Earpones",
+            des:"Airpods proa have been designed to deliver active noise cancellation.]"   
+            },
+            {
+            name:"Airpods Pro",
+            price:6000,
+            imageurl:"https://www.reliancedigital.in/medias/Apple-Airpods-Pro-493177748-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w0MDgyM3xpbWFnZS9qcGVnfGltYWdlcy9oOWUvaGYzLzk4OTA3NTE0Nzk4MzguanBnfDYyNDBlYzc0MmNlOWNkZjUxOTZmOWI0M2M3MmY5ZWIxYTQxMjUwNTMxZDZhODczMTk1NDgwMjczNmZkNTA2OGY",
+            qty:10,
+            heading:"Wireless Noise Cancelling Earpones",
+            des:"Airpods proa have been designed to deliver active noise cancellation.]"   
+            },
+        ]
+
+
+        const cartDetails=[];
+
+// click event
+
+function addItem(event){
+    let btnClicked=event.parentElement.parentElement.parentElement.parentElement;
+    let noStocks=btnclicked.getElementsByClassName("oout-of-stock-cover")[0];
+
+    if(noStock.style.display=='flex')return;
+    let name=btnClicked.getElementsByClassName("product-name")[0].innerText;
+    let price=parseFloat(
+        btnClicked.getElementsByClassName("product-img")[0].innerText.replace("$","")
+    );
+
+    let imgsrc=btnClicked.getElementsByClassName("product-img")[0].src;
+
+    SwitchBtn(btnClicked);
+
+    let cartItem={
+        name,
+        price,
+        imgsrc,
+        qty
+    };
+
+    CartItem(cartItem)
+    cartDetails.push(cartItem)
+    RenderCart();
+    CartItemsTotal();
+
+    function removeItem(event){
+        let btnClicked=event.parentElement;
+        let itemName=btnClicked.getElementsByClassName("name")[0].innerText;
+        let productNames=
+        document.getElementsByClassName("product-name");
+        cartDetails.forEach((item,i)=>{
+            if(itemName==item.name){
+                cartDetails.splice(i,1);
+                for(let name of productName){
+                    if(itemName==name.innerText){
+                        let found=name.parentElement.parentElement;
+                        SwitchBtn(found);
+                    }
+                }
+            }
+        });
+        RenderCart();
+        CartEmpty();
+        CartItemsTotal();
+    }
+
+    function clearCart(){
+        ToggleBacbtns();
+        cartDetails.length=0;
+        RenderCart();
+        CartEmpty();
+        CartItemsTotal(); 
+
+    }
+
+    function qtychange(event,handler){
+        let btnClicked=eve.parentElement.parentElement;
+        let ispresent=btnClicked.classList.contains("btn-add");
+        let itemName=ispresent
+        ?
+        btnClicked.parentElement.parentElement.getElementsByClassName("product-name")[0].innerText:
+        btnClicked.parentElement.getElementsByClassName("name")[0].innerText;
+
+        let productNames=document.getElementsByClassName("product-name");
+        for(let name of product){
+            if(itemName==name.innerText){
+                let productbtn=name.parentElement.parentElement.getElementsByTagName("qty-change")[0];
+                cartDetails.forEach((item,i)=>{
+
+                    if(itemName==item.name){
+                        if(handler=="add" & item.qty<10){
+                            item.qty +=1;
+                            btnClicked.innerHTML=QtyBtn(item.qty);
+                            productBtn.innerHTML=QtyBtn(item.qty)
+                        }else if(handler=="sub"){
+                            item.qty -=1;
+                            productBtn.innerHTML=QtyBtn(item.qty);
+                            productBtn.innerHTML=QtyBtn(item.qty)
+
+                        }if(item.qty<1){
+                            cartDetails.splice(i,1);
+                            product.innerHTML=AddBtn();
+                            productBtn.classList.toggle("qty-change")
+                        }
+                      
+
+                        }  else{
+                            document.getElementsByClassName("purchase-over")[0].style.display="block";
+                            document.getElementsByClassName("stock-list")[0].style.display="flex";
+                            sideNav(0)
+                    }
+                })
+            }
+        }
+    }
+}
+function limtPurchase(event) {
+    document.getElementsByClassName("purchase-cover")[0].style.display="none";
+    event.parentElement.style.display="none";
+    sideNav(1)
+}
+
+function sideNav(handler) {
+    let sideNav=document.getElementsByClassName("side-nav")[0];
+    sideNav.style.right=handler ? "0":"-100%";
+    cover.style.display=handler ? "block":none;
+    cartIsEmpty();
+    
+}
+
+function buy(handler) {
+    if (cartDetails.length ==0)return {
+        
+    }
+    
+}
+
+
+function order() {
+    let invocie=document.getElementsByClassName("invoice")[0];
+    invocie.style.height="500px";
+    invocie.style.width="400px";
+    invocie.innerHTML=orderConfirm();
+    toggleBackBtns();
+    Stock();
+    clearCart();
+
+
+    
+}
+function okay(event) {
+    let container=document.getElementsByClassName("invoice")[0];
+    if (event.target.innerHTML="continue") {
+        
+        container.style.display="none";
+        document.getElementsByClassName("purchase-cover")[0].style.display();
+
+    }
+    else   {
+        event.target.innerHTML="continue";
+        event.target.parentElement.getElementsByClassName("order-details")[0].innerHTML=`<em
+        class=`
+        container.style.height="180px";
+ 
+    }
+     
+     
+}
+
+function Qty(qty=1) {
+    if(qty=0) return AddBtn();
+    return
+    `
+    <div> 
+        <button class='btn-qty' onclick='QTY'>
+
+            </div>
+`        
+}
+
+//ui Components
+function Product(product= {}) {
+    let {name,price, imageurl,heading,des}=product:
+    return
+    `
+    <div class='card'>
+        <div class='top-bar'>
+            <i class="fa-brands fa-apple"></i>      
+            <em class="stock">Incstock</em>
+            </div>
+            <div class='inf-container'>
+            <imag class ='product-img' src='${imageurl}'alt=""/>
+            <div class='out-of-stock-clover'><span>Out of stock </span></div>
+            </div>
+            <div class='details'>
+            <div class='nam-fav'>
+<strong class='product-name'>${name}</strong>
+
+                <button onclick="this.classList.toggle"><i class="fa-solid fa-heart"></i></button>
+                </div>
+                <div class='wrapper'>
+                    <h5>${heading}</h5>
+                    <p>${des}</p>
+                    <div>
+                        <div class='purchase'>
+                            <p class='product-price'> &#8377; ${price}</p>
+                            <span class='btn-add'>${Add}
+                       
+                    </div>
+
+    `
+}
+function CartItems(cartItem={}) {
+    let {name,price,imgsrc,qty}=cartItem;
+    return
+    `
+    <div class='cart-item'>
+        <div class='cart-img'>
+            <img src='qty-change'>${QtyBtn(qty)}
+            <button ><i class="fa-solid fa-trash"></i></button>
+            </div>
+    `
+    
+}
+function Banner() {
+    return`
+    <div class='banner'>
+        <ul class=box-area>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+                </ul>
+                <div class='main-cart'>${DispayProduct()}</div>
+                <button onClick ='sideNav(1)'><i class="fa-solid fa-cart-shopping"></i></button>
+                <span calss='total-qty'>0</span>
+                </div>
+                <div onClick='sideNav(0) class='cover'></div>
+                <div class='cover purchase-cover'></div>
+                <div class='cart'>${CartSideNav()}</div>
+                <div class='stock-limit'>
+                    <em> You can Buy 10 Item for Each Product</em>
+                    <button class ='btn-ok' onclick='limitPurchase(this)'> Okay</button>
+
+
+
+    `
+    
+}
+
+function CartSideNav() {
+    return
+    `
+    <div class='side-nav'>
+   <button> <i class="fa-solid fa-bell"></i></button>
+   <h2>Cart<h2>
+    <div class='cart-item'></div>
+    <div class='final'>
+        <strong>
+
+           <button onclick='buy(1)'> <i class="fa-brands fa-cc-apple-pay"></i> </button>
+    
+        <i class="fa-solid fa-trash"></i>
+
+    `
+    
+}
+
+    </script>
+</body>
+
+</html>

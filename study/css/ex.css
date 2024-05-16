@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.a
+{
+    /* border: 2px solid crimson;  */
+  margin: 0 auto;
+  width: 300px;
+  /* height: 800px; */
+  background-color: aqua; 
+  /* align-items: center; */
+}
+.first
+{
+    background-color: slateblue;
+    font-style: italic;
+}
+.last
+{
+   background-color: azure;
+
+}
+.rno
+{   
+    font-style: oblique;
+    padding: 1px 1px;
+    height: 30px;
+    width: 200px;
+    background-color: darkorange;
+    background-image: url(/img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+rno:hover
+{
+ background-color: darkmagenta;
+}
+.no
+{
+    background-color: firebrick;
+}
+.mg
+{
+   border: 2px solid red; 
+   height: 800px;
+   align-items: center;
+   display: flex;
+   
+}

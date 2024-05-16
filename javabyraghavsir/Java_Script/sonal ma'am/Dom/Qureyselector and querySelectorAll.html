@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <h2 class="para">Query selector</h2>
+    <div id="demo">
+        <p class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio alias, illo soluta officia ex enim totam blanditiis minima exercitationem tenetur necessitatibus omnis cupiditate ullam quia asperiores ipsa dicta perferendis voluptatibus?</p>
+        <h1 class="para">Hello Everyone...!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, minus? Placeat, expedita. Modi asperiores voluptates repellendus a tempore repellat vel consectetur exercitationem, suscipit ratione alias in, dicta qui iure facere.</p>
+        <h2 class="para">Hello</h2>
+        <h1>Heading 1</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed cumque ipsa aliquam quasi blanditiis nostrum deserunt quas tenetur reiciendis consectetur velit voluptate repudiandae, nobis officiis repellendus similique recusandae qui laudantium?</p>
+    </div>
+
+    <!-- Query selector only target 1st class  -->
+
+    <script>
+        let demo=document.querySelector(".para")
+        console.log(demo)
+// =========================================================
+        let xyz=document.querySelector("p.para");
+        xyz.innerHTML="DEMO"
+        console.log(xyz);
+
+        // ("p.para") p for paragraph
+        // This code replaces content in 1st paragraphs(with class para) content with DEMO.
+
+        // ===========================================================
+        
+        let all=document.querySelectorAll(".para");
+        console.log(all);
+
+        for(let i=0;i<all.length;i++){
+            all[i].innerHTML="Replace Text"
+        }
+
+    </script>
+</body>
+</html>

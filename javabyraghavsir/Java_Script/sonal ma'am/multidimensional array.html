@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+
+var student=[
+    ["vaishank",10,"90",'vaishank@gmail.com'],
+    ["owais",20,"70",'vaishank@gmail.com'],
+    ["Amar",35,"80",'vaishank@gmail.com'],
+    ["salman",30,"60",'vaishank@gmail.com'],
+
+]
+document.write(student.length);
+
+document.write("<table border='1px' cellspacing='3' ");
+for (let i=0;i<student.length;i++){
+    document.write("<tr>");
+        for (ab=0;ab<student[i].length;ab++){
+            document.write("<td>"+student [i][ab]+"</td>")
+                // for (a=0;a<student[i].length;a++){
+                //     document.write("<td>"+student[i][a]+"</td>")
+                }
+
+
+        }
+
+
+</script>
+
+</body>
+</html>

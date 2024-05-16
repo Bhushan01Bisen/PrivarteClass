@@ -1,0 +1,402 @@
+<!-- 21st September -->
+HTML - structure
+CSS - design (beautify)
+Bootstrap - styling (makeup - beauty parlour)
+Javascript - functional (connections)
+React - smart features (smart appliance)
+
+// React - JS library
+* Helps to make code easier
+* Component based- each one will work on its own
+* Uses virtual DOM (auto refresh)
+* Virtual (single page application)
+
+// DOM - Document object model
+
+              Document
+                |
+            Root element
+               <html>
+                HTML
+              /      \
+             /        \
+        Element     Element 
+       <head>        <body>
+        / \          /     \
+       /   \        /       \
+      Element   Element   Element
+      <title>     <h1>       <p>
+         |          |         |
+       Text        Text      Text
+     "My text"  "My header" "My paragraph"
+
+    When we create any HTML code
+    DOM is rendered like a tree
+    When we refersh a page
+
+// Virtual DOM - autorefresh (Instagram) whatever changes
+    Bootstrap - twitter
+    React - fb, instagram
+    Angular - google
+
+
+// React's past & future
+React was first created by Jordan Walke, a software engineer at Facebook. It was
+incorporated into Facebook's newsfeed in 2011 and later on Instagram when it was
+acquired by Facebook in 2012.
+ At that time, React was described as “the V in MVC.” In other words,
+React components acted as the view layer or the user interface for your JavaScript
+applications.
+From there, community adoption started to spread. In January 2015, Netflix
+announced that they were using React to power their UI development. Later that month, 
+React Native, a library for building mobile applications using React, was
+released. Facebook also released ReactVR, another tool that brought React to a
+broader range of rendering targets. In 2015 and 2016, a huge number of popular tools
+like React Router, Redux, and Mobx came on the scene to handle tasks like routing
+and state management. After all, React was billed as a library: concerned with implementing a specific set of features, not providing a tool for every use case.
+
+* It is a UI library developed by FB.
+* Creates interactive, stateful & reuseable components.
+* Eg - instagram.com is written in React completely.
+* Uses Virtual DOM.
+  Inshort: React selectively renders subtree of DOM based on state change.
+* Server side rendering is available .
+  Because Fake / Virtual DOM can be rendered on server.
+* Makes use of isomorphic JS.
+  Same JS code can run on servers & client.
+* Other eg- Rendr, Meteor, & Derby.
+* It is the 'V' in MVC - model view controller
+*npm - NODE PACKAGE MANAGER*
+
+
+<!-- 22nd September -->
+node -v   ->  Checks the version
+
+ES6 Ecma script 6 or ES15   
+Variable - store and use data
+Keywords - const (can't be overwritten) and let
+var - can be overwritten
+
+
+// Difference between var, const, let
+A constant is a variable that cannot be overwritten. Once declared, you cannot
+change its value. A lot of the variables that we create in JavaScript should not be overwritten, so we'll be using const a lot. Like other languages had done before it, JavaScript introduced constants with ES6.
+
+local variable - in particular block
+global variable - outside the block
+
+
+// Template Strings
+${ }
+
+name = react                    ` = back tick
+`$ {name}
+
+var name = "Snigdha"
+
+Template strings provide us with an alternative to string concatenation. They also
+allow us to insert variables into a string. 
+
+Traditional string concatenation uses plus signs to compose a string using variable
+values and strings:
+console.log (lastName + ", " + firstName + " " + middleName);
+
+With a template, we can create one string and insert the variable values by surrounding them with ${ }:
+console.log (`${lastName}, ${firstName} ${middleName}`);
+
+Any JavaScript that returns a value can be added to a template string between the
+${ } in a template string
+
+% const email = `
+% Hello ${firstName},
+% Thanks for ordering ${qty} tickets to ${event}.
+% Order Details
+% ${firstName} ${middleName} ${lastName}
+% ${qty} x $${price} = $${qty*price} to ${event}
+% You can pick your tickets up 30 minutes before
+% the show.
+% Thanks,
+% ${ticketAgent}
+
+// Function Declarations //
+A function declaration or function definition starts with the function keyword,
+which is followed by the name of the function, logCompliment. The JavaScript state‐
+ments that are part of the function are defined between the curly braces:
+function logCompliment() {
+ console.log("You're doing great!");
+}
+Once you've declared the function, you'll invoke or call it to see it execute:
+function logCompliment() {
+ console.log("You're doing great!");
+}
+logCompliment();
+Once invoked, you'll see the compliment logged to the console.
+
+// Arrow Functions (imp)
+Arrow functions are a useful new feature of ES6. With arrow functions, you can create functions without using the function keyword. You also often do not have to use
+the return keyword.
+//Arrow function vs normal function//
+
+eg // Regular function
+function sample () {
+    return (
+        <div> sample </div>
+    )
+}
+
+eg // Arrow function
+function sample = () => {
+    return (
+        <div> sample </div>
+    )
+}
+return can be skipped sometimes
+
+// Destructuring Arrays
+Values can also be destructured from arrays. 
+eg - 
+const [firstAnimal] = ["Horse", "Mouse", "Cat"];
+console.log(firstAnimal); // Horse
+
+With the same array, we can access the last value by replacing the first two values with
+commas:
+const [, , thirdAnimal] = ["Horse", "Mouse", "Cat"];
+console.log(thirdAnimal); // Cat
+
+// If-else
+if (light is red) {
+    stop walking
+}
+else {
+    keep walking
+}
+
+var age
+if (age>18) {
+    vote for future
+}
+else {
+    not eligible
+}
+
+if (18>5) {
+    console.log ("win")
+}
+else {
+    console.log ("loose")
+}
+
+if / else
+To check wheather a condition evaluates T/F
+1) Comparison operators
+2) T/F value
+
+// Comparison operators
+a) Greater than (>) or
+Greater or equal to (>=)
+b) Less (<) or
+lessthan or equal to (<=)
+c) Strictly equal (===) or
+equal (=)
+d) Strictly not equal (!==)
+not equal (!==)
+The 1st 2 types of comparison operators are straight forward. You use them to compare numbers.
+
+<!-- 27th September -->
+React uses babel
+
+react     reactdom
+
+sites - 
+codepen.io
+babeljs.io
+babel cdn -> babeljsiw -> script tag
+
+babel is a transfiler
+JS -> html
+Installation of react cdn/cra template
+
+folder-> Terminal -> new terminal
+1) npx create-react-app my-first-app (app name)
+2) cd my-first-app
+3) npm start
+
+- hifen is the space
+*cd - change directory*
+
+We work on src folder
+
+
+<!-- 28th September -->
+// React JSX
+It is a JavascriptXML.
+It is used for templating.
+Basically to write HTML in React.
+It let's you write HTML-ish tags in your JS.
+It is an extension to ECMA script.
+Which looks like XML.
+You can also used plain JS with react.
+You don't have to use JSX.
+But JSX  is recomended.
+JSX makes code more readable & maintainable.
+Ultimately React transforms JSX to JS.
+Performs optimizations.
+JSX is type safe.
+So errors are caught at compilation phase.
+
+Example of JSX and NO JSX
+const myJSXelement= <h1>Hello, I am JSX</h1>
+const myNOjsx= React.createElement("h1", {}, "Hello, I am without JSX")
+
+If you want to call JS variable in jsx you need to place them in {}
+
+JSX is not JS 
+So won't be handled by browser directly
+You need to include React.createElement so that React can understand it
+We need babel to transpile it
+
+Whitespaces
+React removes spaces by default
+You specifically give it using {''}...
+
+There are some attribute name changes
+NOTE: class becomes "className", for becomes "htmlFor"
+Cannot use if-else inside JSX
+But you can use ternary!
+
+
+<!-- 29 September -->
+// Virtual DOM
+This is said to be one of the most imp reasons why React app performance is very fast.
+You know that Document Object Model or DOM is the tree representation of the HTML pages.
+
+Cons of Real DOM 
+Updating DOM is a slow and expensive process
+You have to transverse DOM to find a node and update it
+Updating in DOM is inficient.
+Finding out what needs to be updated is very hard.
+Updating DOM has cascading effects- things need to be recalculated.
+
+Virtual DOM
+Virtual DOM is just a JS object that represents the DOM nodes.
+Updating JS object is efficient and fast
+Virtual DOM is the blueprint of the DOM - the actual building
+React listens to the changes via observables to find out which components changed & need to be updated.
+
+Diffing
+* When an update occurs in your React App - the entire Virtual DOM os recreated.
+* This happens super fast.
+* React then checks the difference between the previous virtual DOM and the new updated virtual DOM.
+* This process is called diffing.
+* It does not affect the React DOM yet.
+* React also calculates the minimum no. of steps it would take to apply just the updates to the real DOM.
+* React the batch-updates all the changes and re-paints the DOM as the last step.
+
+React- components
+* It is a building block that describes what to render
+* To create component Create local variable with Uppercase letter
+* React uses this to distinguish between components and HTML
+* It is heart and soul of React
+* Every component must implement "render" method
+(ClassComponent not for function component)
+
+* Components are independent and reusable bits of code. They serve the same purpose as JS functions, but
+work in isolation and return HTML. Components come in two type, Class components and Function components.
+
+
+<!-- 3rd Oct -->
+// Static Tweet
+Tweet Components
+Tweet
+Avatar
+Author
+Time
+Message
+Like button
+Reply button
+
+<!-- *site name - gravatar* -->
+
+<!-- 6th Oct -->
+// States :-> 
+* It represents data internal to the component
+* It represents the STATE of the component!
+* It is objects which supplies data to component
+* Variables which will modify appearance - 
+- Make them state variables
+* DON'T include something in state if you DON'T use it for re-rendering your component
+- Include it in prop instead
+* Changing state re-renders component
+* State object is immutable (cannot be changed)
+
+// Props 
+* Props are used to communicate between components
+* Child components should be passed state data 
+
+// Components (imp)
+There are 2 types of Components
+1. Class Components (outdated i.e old way)
+* This is considered as the "old way" of defining components in React
+* Define components using Classes
+* They are stateful
+- They store component state change in memory
+* You can access props via this.props
+* You can access states via this.state
+
+// Class component example
+class ClassComponent extends React.Component {
+    constructor () {
+        super ();
+        this.state = {age: 26};
+    }
+    render() {
+        return <h2> I am a class component! </h2>;
+    }
+}
+
+
+2. Functional Components -
+* They are stateless components by default
+ - You can use React hooks to add states though
+ - More about this in React hooks section
+* It recieve props as arguments
+* There is no internal state
+* There are no react lifecycle method available
+ - You can use react hooks to achieve this
+ - React hook like useEffect should give you most of what you'd need
+ * Use it whenever possible
+ - Whenever u don't care about the state of the component
+ - Greatly reduce the baggage of class components
+ - Also offer performance advantage
+ - Improves readiability
+ <!-- *site name - airbnb.co.in* -->
+
+// Reusing Components 
+
+<!-- 10th Oct -->
+// React Map and Lists
+A map is a data collection type where data is stored in the form of pairs. It contains a unique key. The value stored in the map must be mapped to the key. We cannot store a duplicate pair in the map(). It is because of the uniqueness of each stored key. It is mainly used for fast searching and looking up data.
+
+In React, the map method used to traverse and display a list of similar objects of a component. A map is not the feature of React. Instead, it is the standard JS function that could be called on any array. The map() method creates a new array by calling a provided function on every element in the calling array.
+<!-- https://mockaroo.com/ Site for fake data -->
+
+
+<!-- 11th Oct -->
+// useEffect
+Why is it called useEffect?
+    When the core React Hooks were added to the library in 2018 (useState, useEffect, and so on) many developers were confused by the name of this hook: "useEffect".
+
+What exactly is an "effect"?
+    The word effect refers to a functional programming term called a "side effect".
+
+What are side effects in React?
+   * Side effects are not predictable because they are actions which are performed with the "outside world."
+
+   * We perform a side effect when we need to reach outside of our React components to do something. Performing a side effect, however, will not give us a predictable result.
+
+Common side effect include:
+   Making a request to an API for data from backend server to interact with browser APIs (that is, to use document or window directly)
+   Using unpredictable timing function like setTimeout or setInterval.
+
+
+<!-- 12th Oct -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").text("Software Lerning Center");
+            });
+            $("#btn2").click(function () {
+                $("#p2").html("<b>Software Lerning Center </b>");
+            });
+            $("#btn3").click(function () {
+                $("#t1").val("Hello Everyone!!!");
+
+            });
+            $("#btn4").click(function () {
+                $("#img1").attr("src", "j2.jpg");
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="p1">Sevenmenter Pvt Ltd.</p>
+    <p id="p2">F.c.Road, Dhyaneshwer Paduka Chowk,pune.</p>
+    <img src="/gift-wrappig.jpg" id="img1" alt=""><br>
+    <input type="text" id="t1" value="Welcome"><br><br>
+
+
+    <button id="btn1">Set Text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">set Value</button>
+    <button id="btn4">Set Attribute Value</button>
+</body>
+</html>

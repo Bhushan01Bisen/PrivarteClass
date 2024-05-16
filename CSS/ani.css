@@ -1,0 +1,53 @@
+/* /* div
+{
+    height: 100px;
+    width: 100px;
+    background-image: url(lor.jpg);
+    transition: width 2s ;
+    background-position: center;
+    background-size: cover;
+}
+div:hover
+{
+    width: 400px;
+    height: 400px;
+    
+} */
+div
+{
+    height: 400px;
+    width: 400px;
+    background-image: url(she.png);
+    transition: width 2s, height 2s, transform 5s ;
+    background-position: center;
+    background-size: cover;
+}
+div:hover
+{
+    width: 900px;
+    height: 400px;
+    transform:rotate(360deg);
+
+    
+}
+#div1
+{
+    transition-timing-function:ease ;
+}
+#div2
+{
+    transition-timing-function: ease-in;
+}
+#div3
+{
+    transition-timing-function: ease-in-out;
+}
+#div4
+{
+    transition-timing-function: ease-out;
+}
+#div5
+{
+    transition-timing-function: step-end;
+}
+

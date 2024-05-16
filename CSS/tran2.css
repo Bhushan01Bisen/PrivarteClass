@@ -1,0 +1,145 @@
+.div {
+    display: inline-block;
+    background-color: rgb(164, 231, 7);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div:hover {
+    transform: rotate(180deg);
+}
+
+.div2 {
+    display: inline-block;
+
+    background-color: rgb(251, 7, 7);
+    height: 100px;
+    width: 100px;
+    transition: transform 2s;
+}
+
+.div2:hover {
+    /* transform: rotate(-20deg); */
+    transform: scale(2, 3);
+}
+
+.div3 {
+    display: inline-block;
+    background-color: rgb(141, 238, 130);
+    height: 100px;
+    width: 100px;
+    transition: transform 3s;
+
+}
+
+.div3:hover {
+    transform: scaleX(2);
+}
+
+.div4 {
+    display: inline-block;
+    background-color: rgb(138, 147, 146);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div4:hover {
+    transform: scaleY(0.5);
+}
+
+.div5 {
+    display: inline-block;
+    background-color: rgb(36, 151, 109);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div5:hover {
+    transform: skewX(20deg);
+}
+
+.div6 {
+    display: inline-block;
+    background-color: rgb(87, 10, 10);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div6:hover {
+
+    transform: skewX(20deg);
+}
+
+.div7 {
+    display: inline-block;
+    background-color: rgb(174, 27, 132);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div7:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.div8 {
+    display: inline-block;
+    background-color: rgb(98, 136, 71);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div8:hover {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+.div9 {
+    display: inline-block;
+    background-color: rgb(19, 186, 232);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div9:hover {
+    transform: rotateX(150deg);
+
+}
+
+.div10 {
+    display: inline-block;
+    background-color: rgb(249, 51, 51);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div10:hover {
+    transform: rotateY(150deg);
+}
+
+.div11 {
+    display: inline-block;
+    background-color: rgb(108, 25, 108);
+    height: 100px;
+    width: 100px;
+    transition: transform 2S;
+
+}
+
+.div11:hover {
+    transform: rotateZ(150deg);
+}

@@ -1,0 +1,147 @@
+===Java Variables and Constants===============
+javaScript Variable 
+
+In programing, a variable is a container (storage area ) to hold data
+
+ex;let   num=5;
+
+========diffrent betw. them.=============
+
+             var                                                      let
+var is used in the older version of                                    let is new way of decleration variable 
+javaScript                                                             srarting ES6
+
+let is block-scoped.                                                    var is function scoped.
+					                                                   
+			
+let does not allow to redeclare variables.                              var allows to redeclare variables.
+					                                                   
+			
+Hoisting does not occur in let.                                         Hoisting occurs in var.
+					                                                    
+==========RUles for Naming JavaScript Variable =============================
+
+RULES FOR NAMING VARIABLE 
+
+1.Variable name start with either a letter ,an underscore ... ir the doller sign $
+2.Variable names cannot start with numbers.
+3. javaScript is case-Sensetive .so y and Y are diff Variables
+4. Keywords cannot be use as variables names
+
+
+=========== keywords which are Reserved ================
+abstract	arguments	    await	           boolean
+break	      byte	      case	            catch
+char	     class*	      const	          continue
+debugger	 default	    delete	             do
+double	    else	      enum*	            eval
+export   	 extends 	    false	           final
+finally	    float	      for	         function
+goto	       if	        implements	       import
+in	       instanceof	  int	      interface
+let*	       long	      native	          new
+null	     package	    private	       protected
+public      	return	  short	        static
+super 	        switch	synchronized	      this
+throw	        throws	  transient	          true
+try          	typeof   	var           	void
+volatile     	while	    with	        yield
+
+
+*****Notes:***
+* Through you can name variable in any way you wont, its good practice to give a descriptive variable .if you are using a variable to store the numbers of apples,it better tp use apples or nuber OF Apples rather than x or n .
+
+*IN JavaScript, the variable names are generally written in camelCase if it has multiple wprds. For example,firstName,annualSalary.
+
+
+JavaScript Constants
+
+the const keywords was 
+
+once a constant is initialized, we cannot change its value.
+  simply a constant is a type of variable whose value cannot be changed.
+
+
+
+=========== If....else Statement ===========
+
+  in  computer programming there may arise situation where you have to run a block of code among more 
+  than one alternatives.
+
+  ex. assigning grades A,B or C based on marks obtained by a student.
+  in such a situation you can use javaScript. If...else statement to create a program that can make decisions.
+
+  In JS there are three forms of If..else
+  1. If statement
+  2. If....else statement
+  3. If...else if ...else statement
+
+
+============JavaScript Statemenrt=================
+
+
+# Condition is true                              # condition is false
+ 
+  let num = 2;                                    let num = -2;
+  if (num >0){                                    if (num>0){   
+   //code                                          //code
+  }                                                }
+  //code after if                                  //code after if
+
+
+  The if...else statement is used to execute a block of code among two alternatives. However, if you need to make a choice between more than two alternatives, if...else if...else can be used.
+
+The syntax of the if...else if...else statement is:
+
+if (condition1) {
+    // code block 1
+} else if (condition2){
+    // code block 2
+} else {
+    // code block 3
+}
+
+    If condition1 evaluates to true, the code block 1 is executed.
+    If condition1 evaluates to false, then condition2 is evaluated.
+        If the condition2 is true, the code block 2 is executed.
+        If the condition2 is false, the code block 3 is executed.
+
+
+====What is a Ternary operator?=======
+
+A ternary operator evaluates a condition and executes a block of code based on the condition.
+
+Its syntax is:
+
+condition ? expression1 : expression2
+
+The ternary operator evaluates the test condition.
+
+    If the condition is true, expression1 is executed.
+    If the condition is false, expression2 is executed.
+
+The ternary operator takes three operands, hence, the name ternary operator. It is also known as a conditional operator.
+
+Let's write a program to determine if a student passed or failed in the exam based on marks obtained.
+
+
+#Ternary operator
+
+
+=============== JavaScript Loop ================
+n programming, loops are used to repeat a block of code.
+
+For example, if you want to show a message 100 times, then you can use a loop. 
+It's just a simple example; you can achieve much more with loops.
+
+The syntax of the for loop is:
+for (initialExpression; condition; updateExpression) {
+    // for loop body
+}
+
+1. The initialExpression initializes and/or declares variables and executes only once.
+2. The condition is evaluated.
+   # If the condition is false, the for loop is terminated.
+   # If the condition is true, the block of code inside of the for loop is executed.
+3. The updateExpression updates the value of initialExpression when the condition is true.
+4. The condition is evaluated again. This process continues until the condition is false.

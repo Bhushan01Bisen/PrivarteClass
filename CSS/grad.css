@@ -1,0 +1,9 @@
+div
+{
+    height: 300px;
+    /* background-image: linear-gradient(to right , #3036bc, rgb(114, 215, 114), rgb(224, 45, 45), violet, yellow, indigo, orange, #484); */
+    /* background-image: linear-gradient(red, blue); */
+    /* background-image: linear-gradient(180deg,red, blue); */
+/* background-image:linear-gradient(to left,rgb(200,0, 0, 0),rgb(255,0,0,1)); */
+background-image: repeating-linear-gradient(to right bottom,rgb(188, 247, 24),rgb(241, 56, 87) 20%,rgb(203, 25, 203) 10%);
+}

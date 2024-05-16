@@ -1,0 +1,63 @@
+.a
+{
+width: 100px ;
+padding: 12px 20px;
+margin: 8px 0;
+box-sizing: border-box;
+border: 2px solid red;
+}
+
+.name {
+    background-color: yellow;
+    opacity: 0.6;
+    border-radius: 50px;
+    font-size: larger;
+
+}
+.last {
+    background-color: yellow;
+    opacity: 0.6;
+    border-radius: 50px;
+
+}
+.dob {
+    background-color: yellow;
+    opacity: 0.6;
+    border-radius: 50px;
+
+}
+.no {
+    background-color: yellow;
+    opacity: 0.6;
+    border-radius: 50px;
+
+}
+.mail {
+    background-color: yellow;
+    opacity: 0.6;
+    border-radius: 50px;
+
+}
+
+.sub {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.sub:hover {
+    background-color: red;
+}
+
+.res {
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.res:hover {
+    background-color: red;
+}

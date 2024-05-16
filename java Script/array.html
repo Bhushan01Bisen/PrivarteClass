@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+
+<body>
+    <script lang="javascript">
+
+        var fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+        var vege = ["Tomato", "Capsicum", "Dram Sticks"];
+
+        var qty = [10, 45, 23, 67, 89];
+
+        var e = qty.find(f);
+
+        function f(q) {
+            if (q > 40) {
+                document.write(q + "<br>");
+            }
+        }
+
+
+        fruits.forEach(fe);
+
+        function fe(item, index) {
+            document.write(index + ":" + item + "<br>");
+
+        }
+        var c = fruits.concat(vege);
+        var a = fruits.copyWithin(1, 2);
+        document.write("length of array is:" + fruits.length + "<br>");
+        document.write("Concatenated array is:" + c + "<br>");
+        document.write("Copied array is:" + a + "<br>");
+
+
+        var i = fruits.indexOf("Orange");
+        document.write(i + "<br>");
+
+
+        fruits.pop();
+        document.write(fruits + "<br>");
+
+
+        fruits.push("Grapes");
+        document.write(fruits + "<br>");
+        document.write(fruits.reverse() + "<br>");
+        document.write(fruits.sort() + "<br>");
+        document.write(fruits.reverse() + "<br>");
+            
+    </script>
+
+
+
+</body>
+
+</html>

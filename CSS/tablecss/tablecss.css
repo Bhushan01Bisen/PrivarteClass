@@ -1,0 +1,36 @@
+tr {
+  color: gold;
+  background-color: #fff;
+  padding: 20px;
+}
+tr:hover
+{   
+    color: #fff;
+    background-color: brown;
+
+}
+
+tr:nth-child(even)
+{
+    background-color: darkolivegreen;
+}
+
+ table 
+{
+    height: 300px;
+    width: 700px;
+    border:3px solid black;
+    border-bottom: 7px dotted red;
+    background-color: darkslategray;
+
+}
+td,th
+{
+    border: 3px solid rgb(255, 255, 255);
+    /* padding: 20px; */
+    /* background-color: saddlebrown; */
+    margin: 90px;
+    
+
+
+}

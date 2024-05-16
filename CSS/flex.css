@@ -1,0 +1,29 @@
+.flx
+{
+    height: 500px;
+    width: 500px;
+display: flex;
+flex-wrap: wrap;
+border: 2px solid rgb(9, 9, 9);
+gap: 20px;
+align-content: center;
+background-color: blanchedalmond;
+/* flex-direction: column-reverse; */
+}
+.items  
+{
+flex-basis: 100px;
+flex-shrink: 4;
+
+}
+img
+{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+.flex div :nth-of-type(4)
+{
+    flex-grow: 4; 
+}

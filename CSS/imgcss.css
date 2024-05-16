@@ -1,0 +1,40 @@
+img
+{
+    width: 600px; 
+    border-radius: 50%;
+    z-index: -1;
+    
+    
+}
+h1
+{
+    font-family: 'chiller';
+    position: absolute;
+    color:white;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+.img:hover
+{
+   box-shadow: 5px 5px 8px 8px rgb(185, 177, 68);
+    opacity: 0.9;
+   transform: scalex(-1);
+    
+}
+.img1:hover
+{
+filter: grayscale();
+}
+.img2:hover
+{
+filter: contrast(200%);
+}
+.img3:hover
+{
+ filter: hue-rotate();
+}
+.img4:hover
+{
+filter: drop-shadow();
+}

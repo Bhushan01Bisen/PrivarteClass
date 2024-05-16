@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<form name="frm">
+
+    Enter Pincode: <input type="text" name="t1"> <br>
+    <input type="button" value="Accept" onclick="validpin()">
+
+
+</form>
+<script>
+    function validpin() {
+
+        var pin;
+        pin = frm.t1.value;
+        if (pin.length == 0) {
+
+            alert("please Enter Pin Code ");
+            frm.t1.focus();
+
+        } else if (pin.length < 6 || pin.lenght > 8) {
+
+            alert("pincode must containe 6 to 8 digits");
+            frm.t1.focus();
+        } else
+            alert("Pincode accepted");
+    }
+</script>
+
+<body>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiter LIST</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#s1').on("keyup",
+                function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#div1 *").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+                    });
+
+                });
+
+        });
+    </script>
+
+</head>
+
+<body>
+
+    <input id="s1" type="search" placeholder="serch.."><br>
+    <div id="div1">
+        <h1>Sevenmenter Pvt Ltd.</h1>
+        <p>It is a learning center. </p>
+        <div>You can lern any software course here.</div>
+        <button>Click Here</button>
+        <button>Show Again</button>
+        <p>F.C.Road</p>
+        <p>snigdha k</p>
+
+    </div>
+
+
+</body>
+
+</html>

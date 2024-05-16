@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+        //The name value in java script object are called proprties.
+        //object are contain variables.
+        //if we want to warite object {}
+        //Name and value seperted by colan  
+
+var car ={
+    name:'toyota', //properties
+    year: 2022,
+    model:'es6',
+    carstart:function () {
+        return this.name + ' ' + this.model
+        
+    }
+}
+document.write(car.carstart())
+
+let employe={
+    firstName:'xyz',//properties
+    lastName:'pqr',
+    employeId:05,
+    DOB:12-03-2471,
+    joiningDate:'12-10-3589',
+    getemploye:function(){//method
+
+        return this.employeId+ ''+this.lastName;
+
+    },
+    setemploye:function () {
+        return this.firstName
+    },
+    joiningdate:function(){
+        return this.joiningDate
+
+    }
+}
+document.write(employe.getemploye());
+document.write(employe.setemploye());
+document.write(employe.joiningdate());
+    </script>
+
+</body>
+</html>

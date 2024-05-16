@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laudantium voluptatibus fugit dolor eligendi nam, illo molestias architecto nostrum, aliquid hic, facilis alias porro rem doloremque voluptas. Porro, repudiandae aliquid.</div>
+
+    <script>
+      //appendChild
+var newElement=document.createElement("h2");
+var newText=document.createTextNode("Full stack class");
+newElement.appendChild(newText)
+console.log(newElement);
+
+document.getElementById("test").appendChild(newElement)
+//to put <h2> before paragraph
+var app=document.getElementById("test")
+app.insertBefore(newElement,app.childNodes[0])
+
+    </script>
+    
+</body>
+</html>  

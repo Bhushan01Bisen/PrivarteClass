@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <form frm="">
+        User Name: <input type="text" name="t1" id="t1" onfocus="foc()"><br><br>
+        password: <input type="text" name="t1" id="t1" onfocus="foc()"><br><br>
+        <input type="button" value="login" onclick="validpin()">
+    </form>
+
+    <script>
+        function validpin() {
+            var umm = frm.t1.value;
+            var psd = frm.pWd.value;
+            var psd = frm.uwd.value;
+            var psd = frm.psd.value;
+            var pin = frm.t2.value;
+            var flag = 0;
+            //Username validation
+
+
+
+            if (cnt1 == 0) {
+
+                alert("please Enter User Name ");
+                frm.t1.focus();
+
+            } else if (cnt1 < 4 || cnt1 > 8) {
+
+                alert("User Name must containe 6 to 8 digits");
+                frm.t1.focus();
+
+
+
+                
+            } else if (cnt1 < 4 || cnt1 > 8) {
+                alert("User should be form 4 to 8 characters");
+                frm.t1.focus();
+
+            }
+            for (i = 0; i<=cnt1; i++) {
+                if ((unm.charAt[i] == "@") || (unm.charAt[i] = "#") || (unm.charAt[i] = '$') || (unm.charAt[i] = "%") ||(unm.charAt[i] = "&")) {
+                    flag = 1;
+
+
+                }
+            }
+                if (flag==1) {
+                   alerta("special symbols are not allowed in username");
+                   frm.t1.focus(); 
+                }
+
+                //password validation 
+                flag=0;
+                if (cnt2==0) {
+                    
+                    
+                }
+
+            }
+
+
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>insertAdjacentElement</title>
+  
+</head>
+<body>
+
+    <body>
+        <div id="test">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas rem neque ipsa! Magnam accusamus molestiae ea tempora impedit maiores veritatis iure culpa, facilis hic exercitationem ut, sunt placeat a laudantium!
+     
+        </div> 
+     
+        <script>
+         //appendChild
+         var newElement=document.createElement("h2");
+         var newtext=document.createTextNode("This is just text-1");
+         newElement.appendChild(newtext)
+         
+         
+         
+         
+         var target=document.getElementById("test")
+       // target.insertAdjacentElement("beforebegin",newElement)
+         // target.insertAdjacentElement("afterbegin",newElement)
+        // target.insertAdjacentElement("beforeend",newElement)
+         target.insertAdjacentElement("afterend",newElement)
+     
+         // Try one by one
+         
+             </script>
+     </body>
+
+</body>
+</html>

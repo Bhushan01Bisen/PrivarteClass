@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="test"></p>
+
+    <!-- In  this method we first check the condition then fuction is forword in next steps.
+    
+    then() and cathch is callback fuction in js ..it is used with promis -->
+    
+<!-- type of promises -->
+<!-- 1 pending = umdefine 
+2.fulfill = ressult
+3.reject = error or mg-->
+<script>
+    function display(some) {
+        document.getElementById("demo").innerHTML = some
+    }
+
+    let promise = new Promise(function (resolve, reject) {
+        let x = '0';
+        if (x == 0) {
+            resolve("OK")
+        }else{
+            reject("ERROR")
+        }
+    })
+
+    promise.then(function(value){
+        display(value)
+    },
+    function(error){
+        display(error)
+    })
+
+    
+    // =========================================================================
+   
+    let xyz=new Promise (function(resolve,reject){
+        setTimeout(function(){
+            resolve("Welcome to node class...!")
+        },3000)
+    });
+    xyz.then(function(value){
+        document.getElementById("test").innerHTML=value;
+    })
+
+</script>
+
+
+
+</body>
+</html>

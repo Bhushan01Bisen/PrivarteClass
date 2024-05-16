@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction()">Click me</button>
+    <h2 id="demo"></h2>
+   
+   
+    <script>
+       function myfunction(){
+           document.getElementById("demo").innerHTML="This is Onclick Demo"
+       }
+    </script>
+   
+    <!-- ================================================= -->
+   
+   <button ondblclick="dbl()">Double Click </button>
+   <h2 id="demo1"></h2>
+   <script>
+       function dbl(){
+           document.getElementById("demo1").innerHTML="This is Double click Demo"
+       }
+    </script>
+   
+    <!-- ================================================= -->
+   
+    <button oncontextmenu="rightclick()">Right Click</button>
+    <p id="demo2"></p>
+    <script>
+       function rightclick(){
+          document.getElementById("demo2").innerHTML="This is Right click" 
+       }
+    </script>
+   
+    <!-- ================================================= -->
+   
+   <p id="mypara" onmousedown="down()" onmouseup="up()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, aliquid tenetur, aspernatur quasi animi cupiditate nulla officia quaerat, fugiat cumque reprehenderit. Explicabo harum modi earum asperiores corporis impedit sapiente laudantium.</p> 
+   <script>
+       function down(){
+           document.getElementById("mypara").style.color="red"
+       }
+   
+       function up(){
+           document.getElementById("mypara").style.color="blue"
+   
+       }
+       
+   </script>
+   
+    <!-- ================================================= -->
+   
+   
+    <img src="rah.jpg" width="250px" height="300px" alt="pic" onmouseenter="largeimg(this)" onmouseleave="leave(this)">
+    <script>
+       function largeimg(y){
+           y.style.width="500px";
+           y.style.height="600px";
+           y.style.cursor="pointer";
+       }
+       function leave(x){
+           x.style.width="250px";
+           x.style.height="300px";
+       }
+    </script>
+   
+    <!-- ================================================= -->
+   
+   <div style=" border :1px solid black ; width: 150px; height:150px;" 
+   onmouseover="move(event)" onmouseout="mouseout()"> Over Me </div>
+   <p id="demo3"></p>
+   <script>
+       function move(z){
+           var x=z.clientX;
+           var y=z.clientY;
+           var coordination="Co-ordinates :("+ x +","+ y +")";
+   
+           document.getElementById("demo3").innerHTML=coordination
+       }
+       function mouseout(){
+           document.getElementById("demo3").innerHTML="";
+       }
+   </script>
+   
+   </body>
+</html>

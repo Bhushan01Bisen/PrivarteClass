@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header
+        {
+            width: 100%;
+            height: 100px;
+            background: cadetblue;
+            padding: 30px;
+        }
+        #mydiv
+        {
+background-color: coral;
+padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    
+<div id="hearder">
+    <h2>Seven Mentor: UI/UX Desiging</h2>
+
+
+</div>
+
+<div id="mydiv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt totam a maxime ipsum ducimus qui enim repellat illo, fuga praesentium? Iusto rem sed at totam placeat sequi a sit natus.
+
+<button id="remove">Remove</button>
+</div>
+
+
+    <script>
+
+document.getElementById("header").addEventListener("click",function(){
+    document.getElementById("header").innerHTML="Hello!..."
+});
+document.getElementById("hearder").addEventListener("dbclick",abc);
+
+function abc() {
+    document.getElementById("header").style.background="red"
+
+    
+}
+
+// removeEventListener
+
+document.getElementById("mydiv").addEventListener("mousemove",function(){
+    document.getElementById("mydiv").style.background="yellow"
+})
+
+document.getElementById("remove").addEventListener("click",function () {
+    document.getElementById("mydiv").removeEventListener("mousemove",function () {
+        document.getElementById("mydiv").style.background="red"
+        
+    })
+    
+});
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>

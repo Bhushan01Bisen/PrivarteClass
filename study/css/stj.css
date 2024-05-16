@@ -1,0 +1,68 @@
+/* div
+{
+    background-color: aqua;
+    color: blueviolet;
+} */
+/* div p
+{
+ background-color: yellowgreen;
+ color:saddlebrown ;
+} */
+/* div>p
+{
+    background-color: thistle;
+    color: saddlebrown;
+}
+div>p
+{
+    background-color: gold;
+    color: darkblue;
+} */
+div~p
+{
+    background-color: black;
+    color: red;
+}
+a:link
+{
+    color: rgb(0, 139, 102);
+}
+a:visited
+{
+    color:forestgreen;
+}
+a:hover
+{
+    color: gold;
+    font-size: 100px;
+}
+P i:first-child
+{
+color: rebeccapurple;
+font-size: 10px;
+}
+p::first-letter
+{
+    color: forestgreen;
+    font-size: 40px;
+}
+p::first-line
+{
+    color: tan;
+}
+h1::before
+{
+content: url(css/logo.png);
+width: 10px;
+height: 10px;
+
+}
+h1::after
+{   
+content: url(css/logo.png);
+}
+::selection
+{
+    background-color: aqua;
+    color: red;
+}

@@ -1,0 +1,49 @@
+.rectangle{
+    background-color: rgb(44, 44, 170);
+    height: 500px;
+    width: 100%;
+    border-bottom-left-radius:45px;
+    overflow: hidden;
+
+}
+.circle{
+    background-color: rgb(61, 61, 184);
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    margin-left: 705px;
+    opacity: 0.5;
+    margin-top: -200px;
+}
+
+.login_container
+{
+    height: 500px;
+    width: 400px;
+    background-color: aliceblue;
+    position: absolute;
+    margin-top: -320px;
+    border-radius: 35px;
+    margin-left: 600px;
+}
+
+.form_container
+{
+  padding: 25px;   
+
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 600px) {
+  .rectangle{
+    height: 300px;
+  }
+    .circle{
+margin-left: 100px;
+margin-top: 180px;
+height: 400px;
+width: 400px;
+   }
+  }

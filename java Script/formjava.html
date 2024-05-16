@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript">
+        function foc() {
+            document.getElementById("t1").style.backgroundColor = "yellow";
+            document.getElementById("t1").style.Color = "red";
+
+
+        }
+
+        function change() {
+            var x;
+            x = document.getElementById("city").value;
+            document.getElementById("h").innerHTML = "you have selected" +
+                x;
+        }
+
+        function sub() {
+            alert("You have submitted the form")
+        }
+
+        function upper() {
+            var a;
+            a = document.getElementById("t2");
+            a.value = a.value.toUppercase();
+        }
+
+        function l() {
+            document.bgColor = "pink";
+        }
+
+        function u() {
+            alert("you have closed window.");
+        }
+
+        function sel() {
+            document.getElementById("t2").style.color = "green";
+            document.getElementById("t2").style.fontSize = "30px";
+        }
+
+        function re() {
+            alert("you have cleared the form please fill it again")
+        }
+    </script>
+</head>
+
+<body onload="l()" onunload="u()">
+    <h1 id="h"></h1>
+    <form name="frm" onsubmit="sub()" onreset="re()">
+
+        Enter Name: <input type="text" name="t1" id="t1" onfocus="foc()"><br><br>
+        Enter lastName: <input type="text" name="t2" id="t2" onblur="upper()" onselect="sel()"><br><br>
+        city: <select id="city" onchange="change()"><br>
+            <option>Nagpur</option>
+            <option>Tirora</option>
+            <option>Gondia</option>
+            <option>pune</option>
+        </select><br><br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+
+
+    </form>
+
+</body>
+
+</html>
